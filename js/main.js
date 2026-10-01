@@ -98,7 +98,7 @@
     if (atEnd) cur = 'kontakt';
     links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + (cur === 'novo' ? 'izdvajamo' : cur)));
     const p = scrollY / Math.max(1, document.documentElement.scrollHeight - innerHeight);
-    car.style.setProperty('--x', (p * car.parentElement.clientWidth) + 'px');
+    car.style.left = (p * 100) + '%';
   };
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
   const toggleMenu = (f) => { const o = f ?? !menu.classList.contains('open'); menu.classList.toggle('open', o); burger.setAttribute('aria-expanded', o); document.body.style.overflow = o ? 'hidden' : ''; };

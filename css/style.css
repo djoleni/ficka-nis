@@ -46,13 +46,7 @@ em{font-family:var(--serif);font-style:italic;font-weight:600;text-transform:non
 .burger[aria-expanded=true] i:last-child{top:19px;transform:rotate(-45deg)}
 .road{position:absolute;left:0;right:0;bottom:0;height:2px;background:rgba(255,255,255,.08);opacity:0;transition:opacity .4s}
 .nav.solid .road{opacity:1}
-.road img{
-  position:absolute;bottom:2px;left:0;width:40px;
-  transform:translate3d(calc(var(--x,0px) - 50%),0,0) scaleX(var(--f,-1));
-  transition:transform .15s linear;
-  will-change:transform;
-  backface-visibility:hidden;
-}
+.road img{position:absolute;bottom:2px;left:0;width:40px;transform:translateX(-50%) scaleX(var(--f,-1));transition:transform .3s ease;filter:drop-shadow(0 0 8px rgba(246,229,138,.75))}
 
 /* BUTTONS */
 .btn{display:inline-block;padding:15px 32px;border-radius:99px;font-weight:700;text-decoration:none;font-size:.92rem;letter-spacing:.04em;transition:.3s}
