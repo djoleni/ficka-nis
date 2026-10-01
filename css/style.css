@@ -251,3 +251,18 @@ main{overflow-x:clip}
 @media(max-width:380px){.brand span{letter-spacing:.18em;font-size:.95rem}.brand img{width:50px}.nav{gap:8px}}
 
 .menu a.active{opacity:1}.menu a.active::after{right:0}
+
+
+@media (max-width: 600px) {
+  :root { --band-h: 40px; }
+  .band { padding: 8px 0; }
+  .band-track span {
+    font-size: 17px;
+    line-height: 1.4;
+    padding: 0 14px;
+  }
+  .band-track span::after {
+    margin-left: 28px;
+    font-size: .7rem;
+  }
+}
