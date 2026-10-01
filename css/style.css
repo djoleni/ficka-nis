@@ -267,6 +267,3 @@ main{overflow-x:clip}
   }
 }
 
-@media (max-width:1040px){
-  .nav::before{backdrop-filter:none;background:rgba(6,7,11,.95)}
-}
