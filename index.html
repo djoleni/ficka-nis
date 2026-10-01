@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kafe Fićka · Niš · Cara Dušana 122</title>
+<meta name="description" content="Kafe Fićka na Čairu u Nišu: kafa, matcha, kokteli i DJ subotom. Cara Dušana 122. Radimo svaki dan do ponoći.">
+<meta name="theme-color" content="#06070B">
+<meta property="og:title" content="Kafe Fićka · Niš">
+<meta property="og:description" content="Sedi u Fiću. Ostani na piću. Cara Dušana 122, Niš.">
+<meta property="og:image" content="https://ficka-nis.vercel.app/assets/img/fasada.webp">
+<link rel="icon" type="image/webp" href="assets/logo/logo-s.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand k" href="#top" aria-label="Kafe Fićka"><img src="assets/logo/car.webp" alt="" width="62" height="28"><span>ФИЋКА</span></a>
+  <nav class="menu" id="menu" aria-label="Glavni meni">
+    <a href="#onama">O nama</a><a href="#izdvajamo">Izdvajamo</a><a href="#karta">Karta</a><a href="#dogadjaji">Događaji</a><a href="#atmosfera">Atmosfera</a><a href="#kontakt">Kontakt</a>
+  </nav>
+  <div class="nav-end">
+    <button class="script k" id="scriptToggle" type="button" aria-label="Promeni pismo"><span data-s="lat" class="on">Lat</span><span data-s="cir">Ћир</span></button>
+    <button class="burger" id="burger" type="button" aria-label="Meni" aria-expanded="false"><i></i><i></i></button>
+  </div>
+  <div class="road" aria-hidden="true"><img id="roadCar" src="assets/logo/car-yellow.webp" alt=""></div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="bokeh" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="spot" id="spot" aria-hidden="true"></div>
+  <div class="sign" id="sign">
+    <img class="s-car" src="assets/logo/car.webp" alt="Plavi Fićko, logo kafea Fićka" width="960" height="432" fetchpriority="high">
+    <img class="s-word" src="assets/logo/word.webp" alt="ФИЋКА" width="960" height="173">
+  </div>
+  <div class="hero-copy">
+    <h1>Sedi u <em>Fiću.</em> Ostani na piću.</h1>
+    <p class="eyebrow">Kafe &amp; koktel bar · Čair, Niš</p>
+    <div class="cta"><a class="btn btn-neon" href="#karta">Pogledaj kartu</a><a class="btn btn-line" href="#kontakt">Kako do nas</a></div>
+    <p class="status" id="status" aria-live="polite"></p>
+  </div>
+  <div class="strip" aria-hidden="true"><div class="strip-road"></div></div>
+</section>
+
+<div class="band" aria-hidden="true"><div class="band-track">
+  <span>Kafa</span><span>Matcha</span><span>Kokteli</span><span>Bašta</span><span><b class="k" style="font-weight:inherit">DJ</b> subotom</span><span>Retro Fićko</span>
+  <span>Kafa</span><span>Matcha</span><span>Kokteli</span><span>Bašta</span><span><b class="k" style="font-weight:inherit">DJ</b> subotom</span><span>Retro Fićko</span>
+</div></div>
+
+<!-- O NAMA -->
+<section class="section cream about" id="onama">
+  <div class="about-imgs">
+    <figure class="ph p1 reveal"><img src="assets/img/interior-vrata.webp" alt="Otvorena vrata zelenog Fićka" loading="lazy"></figure>
+    <figure class="ph p2 reveal"><img src="assets/img/ficko-zid.webp" alt="Žuti Fićko na zidu kafea" loading="lazy"></figure>
+    <figure class="ph p3 reveal"><img src="assets/img/ficko-cvece.webp" alt="Roze Fićko ukrašen cvećem" loading="lazy"></figure>
+  </div>
+  <div class="about-text reveal">
+    <p class="eyebrow dark">O nama</p>
+    <h2>Kafić sa <em>karakterom</em></h2>
+    <p>Fićka je dobila ime po automobilu koji se nekada vozio na svakom ćošku. Plavi Fićko stoji na ulazu, a žuti visi na zidu unutra.</p>
+    <p>Radimo od jutra do ponoći: ujutru kafa, preko dana matcha, uveče koktel. Subotom svira <span class="k">DJ</span>, a bašta je ispred lokala.</p>
+    <ul class="facts">
+      <li><strong class="k">08–00</strong><span>svaki dan</span></li>
+      <li><strong class="k">DJ</strong><span>subotom uveče</span></li>
+      <li><strong>Bašta</strong><span>na Čairu</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- IZDVAJAMO -->
+<section class="section night sig" id="izdvajamo">
+  <div class="head reveal"><p class="eyebrow">Iz naše karte</p><h2>Izdvajamo sa <em>karte</em></h2></div>
+  <div class="sig-in">
+    <div class="stage reveal" id="stage"><div class="frame" id="frame"></div>
+      <div class="cap"><span class="cap-price k" id="capPrice"></span><p id="capText"></p></div>
+    </div>
+    <ol class="dl reveal" id="dl"></ol>
+  </div>
+</section>
+
+<!-- NOVO -->
+<section class="section cream novo" id="novo">
+  <div class="novo-in">
+    <div class="novo-text reveal">
+      <p class="eyebrow dark">Novo u kafiću</p>
+      <h2>Novo na <em>karti</em></h2>
+      <p class="mut">Sva pića biraš u toploj ili hladnoj varijanti, sa običnim ili biljnim mlekom.</p>
+      <ul class="newlist" id="newlist"></ul>
+    </div>
+    <figure class="novo-img reveal"><img src="assets/img/pink-ficka.webp" alt="Pink Fićka, roze piće sa malinama" loading="lazy"><figcaption class="k">Pink Fićka</figcaption></figure>
+  </div>
+</section>
+
+<!-- KARTA -->
+<section class="section night karta" id="karta">
+  <div class="head reveal"><p class="eyebrow">Karta pića</p><h2>Karta <em>pića</em></h2></div>
+  <div class="tabs reveal" role="tablist" id="tabs"></div>
+  <ul class="list" id="list"></ul>
+  <p class="note">Izbor iz karte. Cene su u dinarima i mogu se razlikovati u lokalu.</p>
+</section>
+
+<!-- DOGADJAJI -->
+<section class="section events" id="dogadjaji">
+  <div class="events-in">
+    <div class="events-text reveal">
+      <p class="eyebrow">Kalendar događaja</p>
+      <h2>Oktobar <em>2026.</em></h2>
+      <p class="lead-l">Subotom uveče je muzika. Dođi ranije da uhvatiš dobar sto.</p>
+      <ul class="dates">
+        <li><time>03.</time><span class="k">DJ Džoni Lepi</span><i class="k">20–01h</i></li>
+        <li><time>10.</time><span class="k">DJ J.R. Mark</span><i class="k">20–01h</i></li>
+        <li><time>17.</time><span class="k">DJ Cvele</span><i class="k">20–01h</i></li>
+        <li><time>24.</time><span class="k">DJ J.R. Mark</span><i class="k">20–01h</i></li>
+        <li><time>31.</time><span class="k">DJ Cvele</span><i class="k">20–01h</i></li>
+      </ul>
+      <p class="rez">Rezervacije: poruka na <a class="k" href="https://www.instagram.com/ficka_nis/" target="_blank" rel="noopener">Instagramu</a> ili poziv na <a class="k" href="tel:+381652020790">065 2020790</a></p>
+    </div>
+    <img class="poster reveal" src="assets/img/dogadjaji-oktobar.webp" alt="Kalendar događaja, oktobar 2026" loading="lazy">
+  </div>
+</section>
+
+<!-- ATMOSFERA -->
+<section class="section cream gallery" id="atmosfera">
+  <div class="head reveal"><p class="eyebrow dark">Atmosfera</p><h2>Prostor i <em>detalji</em></h2></div>
+  <div class="mason">
+    <img class="reveal" src="assets/img/basta.webp" alt="Bašta kafea Fićka" loading="lazy">
+    <img class="reveal" src="assets/img/kafa.webp" alt="Šolja kafe sa šlagom" loading="lazy">
+    <img class="reveal" src="assets/img/fasada.webp" alt="Ulaz u Fićku" loading="lazy">
+    <img class="reveal" src="assets/img/topolino.webp" alt="Topolino kafa" loading="lazy">
+    <img class="reveal" src="assets/img/violet.webp" alt="Violet malina i beli krastavac" loading="lazy">
+    <img class="reveal" src="assets/img/espresso-martini.webp" alt="Espresso Martini, Kiwi Collins i Melon Mint" loading="lazy">
+    <img class="reveal" src="assets/img/pink-sour.webp" alt="Italian Pink Sour" loading="lazy">
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="section night contact" id="kontakt">
+  <div class="contact-card reveal">
+    <p class="eyebrow">Kontakt</p>
+    <h2>Kako do <em>nas</em></h2>
+    <dl>
+      <dt>Adresa</dt><dd>Cara Dušana 122, Niš</dd>
+      <dt>Telefon</dt><dd><a class="k" href="tel:+381652020790">065 2020790</a></dd>
+      <dt>Instagram</dt><dd><a class="k" href="https://www.instagram.com/ficka_nis/" target="_blank" rel="noopener">@ficka_nis</a></dd>
+    </dl>
+    <h3>Radno vreme</h3>
+    <ul class="hours" id="hours">
+      <li data-d="1"><span>Ponedeljak</span><b class="k">08:00–00:00</b></li>
+      <li data-d="2"><span>Utorak</span><b class="k">08:00–00:00</b></li>
+      <li data-d="3"><span>Sreda</span><b class="k">08:00–00:00</b></li>
+      <li data-d="4"><span>Četvrtak</span><b class="k">08:00–00:00</b></li>
+      <li data-d="5"><span>Petak</span><b class="k">08:00–00:00</b></li>
+      <li data-d="6"><span>Subota</span><b class="k">08:00–00:00</b></li>
+      <li data-d="0"><span>Nedelja</span><b class="k">10:00–00:00</b></li>
+    </ul>
+  </div>
+  <div class="map reveal"><iframe title="Mapa: Kafe Fićka, Cara Dušana 122, Niš" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=43.3181332,21.9053136&z=17&output=embed"></iframe></div>
+</section>
+</main>
+
+<footer class="foot">
+  <img src="assets/logo/logo-s.webp" alt="Fićka" width="96" height="60">
+  <p>Cara Dušana 122, Niš · <span class="k">065 2020790</span></p>
+  <p class="small">© <span id="year" class="k">2026</span> Kafe Fićka</p>
+</footer>
+
+<div class="lb" id="lb" hidden><img alt=""><button type="button" aria-label="Zatvori">×</button></div>
+<script src="js/main.js"></script>
+</body>
+</html>
